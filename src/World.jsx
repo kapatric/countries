@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Modal from "./Modal.jsx";
 
-export default function World({ country }) {
+export default function World({ country, searchInput }) {
   const [modalData, setModalData] = useState();
   const [showModal, setShowModal] = useState(false);
   console.log(country, "World")
@@ -9,7 +9,9 @@ export default function World({ country }) {
     <div>
       <section>
           <div className="gallery">
-            {country.map((country) => (
+          {country.filter((country) => {
+              return country.name.toLowerCase().includes(searchInput.toLowerCase())
+            }).map((country) => (
               <div key={country.name} onClick={() => setShowModal(true)}>
                 <img
                   src={country.flags.png}

@@ -6,8 +6,10 @@ import SearchBar from "./SearchBar";
 
 export default function Pais() {
   const [country, setCountry] = useState();
-  const [showModal, setShowModal] = useState(false);
+  const [searchInput, setSearchInput] = useState("");
+
   
+
   const fetchCountries = async () => {
     const response = await fetch(
       "https://rampant-sign-production.up.railway.app/countries"
@@ -22,15 +24,14 @@ export default function Pais() {
 
   console.log(country);
 
-  
   if (!country) return null;
   return (
     <>
-      <nav className="navbar">Countries of the World
-      <SearchBar />
+      <nav className="navbar">
+        Countries of the World
+        <SearchBar setSearchInput={setSearchInput} searchInput={searchInput} />
       </nav>
-      <World country={country} />
-  
+      <World country={country} searchInput={searchInput} />
     </>
   );
 }
