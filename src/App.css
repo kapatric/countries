@@ -31,3 +31,7 @@ img {
 SearchBar {
 padding-left: 20px;
 }
+
+input {
+  width: 200px;
+}
