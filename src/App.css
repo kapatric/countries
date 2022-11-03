@@ -21,10 +21,13 @@ img {
   background-color: black;
   min-height: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   color: red;
   font-size: xx-large;
-  margin: 2px;
-  padding-top: 10px;
+  margin: 2px 20px 2px 2px;
+  padding: 10px;
 }
 
+SearchBar {
+padding-left: 20px;
+}

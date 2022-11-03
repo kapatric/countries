@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Modal from "./Modal.jsx";
 import World from "./World.jsx";
-import SearchBar from "./searchBar";
+import SearchBar from "./SearchBar";
 
 export default function Pais() {
   const [country, setCountry] = useState();
@@ -27,13 +27,10 @@ export default function Pais() {
   return (
     <>
       <nav className="navbar">Countries of the World
-        {/* <input type="search"
-          placeholder="Country name"
-          onChange={handleChange}
-          value={searchInput} /> */}
+      <SearchBar />
       </nav>
       <World country={country} />
-      console.log(modalData)
+  
     </>
   );
 }
