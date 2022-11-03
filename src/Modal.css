@@ -15,14 +15,18 @@
   background-color: #fff;
 }
 
-.modal-header, .modal-footer {
+.modal-header {
   padding: 10px;
   color: beige;
 
 }
+.modal-footer {
+  color: beige;
+}
 
 .modal-title {
-  align-content: center;
+  justify-content: center;
+  text-align: center;
   margin: 0;
   color: beige;
 }

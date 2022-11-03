@@ -3,11 +3,11 @@ import World from "./World.jsx"
 import Modal from "./Modal.jsx";
 import App from "./App.js"
 
-const SearchBar = () => {
+export default function SearchBar(){
   const [searchInput, setSearchInput] = useState("");
   const [showModal, setShowModal] = useState(false);
   const [modalData, setModalData] = useState();
-  const [country, setCountry] = useState();
+  const country = searchInput;
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -37,4 +37,3 @@ const SearchBar = () => {
   </div>
 };
 
-export default SearchBar;

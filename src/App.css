@@ -22,7 +22,7 @@ img {
   min-height: 50px;
   display: flex;
   justify-content: space-between;
-  color: red;
+  color: rgb(0, 153, 255);
   font-size: xx-large;
   margin: 2px 20px 2px 2px;
   padding: 10px;
