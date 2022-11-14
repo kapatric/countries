@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import Modal from "./Modal.jsx";
 import World from "./World.jsx";
 import SearchBar from "./SearchBar.jsx";
 
